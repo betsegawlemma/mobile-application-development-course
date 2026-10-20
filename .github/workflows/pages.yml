@@ -21,6 +21,9 @@ concurrency:
 
 jobs:
   build:
+    # The slide site is published from the public student repository only;
+    # in the private source repository (no Pages) this job is skipped.
+    if: ${{ !github.event.repository.private }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
