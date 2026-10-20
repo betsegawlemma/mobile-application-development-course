@@ -23,7 +23,7 @@ its lecture.
 
 | Wk | Topic | Materials |
 |---|---|---|
-| 1 | Mobile landscape, Flutter, Dart I | *available before the lecture* |
+| 1 | Mobile landscape, Flutter, Dart I | [notes](weeks/week01-intro-dart/README.md) · [slides](https://betsegawlemma.github.io/mobile-application-development-course/week01/) · [lab](weeks/week01-intro-dart/lab/README.md) · [quiz](weeks/week01-intro-dart/quiz.md) |
 | 2 | Dart II; widget lifecycle | *available before the lecture* |
 | 3 | Layout and common widgets | *available before the lecture* |
 | 4 | Navigation | *available before the lecture* |
