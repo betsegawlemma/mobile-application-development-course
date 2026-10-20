@@ -146,7 +146,7 @@ industry topics follow.
 | Mid exam 30 % | week 8; covers weeks 1–7 (`syllabus/exams.md`) |
 | Project 30 % | `project/` — proposal, two milestones, submission, presentation |
 | Final exam 40 % | examination period; covers weeks 1–14, including week 8 (`syllabus/exams.md`) |
-| Groups of four, emailed with the subject "Mobile App Project" | `project/README.md`, `project/proposal-template.md` |
+| Groups of four, registered with `project.yaml` in the group repository and a form | `project/README.md`, `project/project-template.yaml`, `project/proposal-template.md` |
 
 ## Course outcomes and assessment
 

@@ -1,6 +1,7 @@
 # Project proposal
 
-**Due:** end of week 3 · **Submit:** PDF by email, subject *Mobile App Project*
+**Due:** end of week 3 · **Submit:** commit it as `PROPOSAL.md` in the root
+of your group's repository and tag that commit `proposal`
 
 Replace every *italic* instruction with your own text. Keep the whole
 proposal under four pages.
@@ -14,12 +15,15 @@ what] so that [benefit]."*
 
 ## 2. Group
 
-| Name | Student ID | Email | Role |
-|---|---|---|---|
-| | | | *e.g. team lead, UI, data/backend, testing* |
-| | | | |
-| | | | |
-| | | | |
+*Student IDs, emails and GitHub usernames are in `project.yaml`; do not
+repeat them here.*
+
+| Name | Role |
+|---|---|
+| | *e.g. team lead, UI, data/backend, testing* |
+| | |
+| | |
+| | |
 
 *Roles are starting points; everyone writes code in every layer.*
 

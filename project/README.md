@@ -20,13 +20,26 @@ published.
 
 ## Registration and submission
 
-- **Register** by emailing the instructor with the subject **Mobile App
-  Project**: group members' full names and student IDs, one email address
-  per member, and your provisional project title.
-- **Proposal**: the completed `proposal-template.md`, sent as a PDF with
-  the same email subject.
-- **Milestones and final submission**: a GitHub repository (one per group)
-  with the instructor and TAs added as collaborators. Each milestone is a
+Everything about your project lives in your group's GitHub repository
+(one per group). Add the instructor and the TAs as collaborators if the
+repository is private.
+
+- **Register** by the end of week 2:
+  1. copy [project-template.yaml](project-template.yaml) to the root of
+     your repository as `project.yaml`, and fill in the title, the
+     one-sentence summary and the four members (name, student ID, email,
+     GitHub username, lab folder);
+  2. push it to the `main` branch;
+  3. one member submits the repository link in the registration form
+     given in the course announcement.
+
+  The course reads `project.yaml` with a program: keep every key as it
+  is spelled in the template, and keep the file up to date when the
+  title or a member changes.
+- **Proposal** by the end of week 3: the completed
+  `proposal-template.md`, committed as `PROPOSAL.md` in the root of your
+  repository, with the tag `proposal` on that commit.
+- **Milestones and final submission**: in the same repository. Each milestone is a
   Git tag (`m1`, `m2`, `final`) plus a short `MILESTONE.md` in the
   repository root describing what was done and by whom (see
   [milestones.md](milestones.md)).

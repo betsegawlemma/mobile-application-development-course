@@ -311,5 +311,6 @@ Add a file `AI_NOTE.md` with three lines. The TA reads it at Checkpoint B.
 Lab work is individual. Push your `lab/starter/` work, `predictions.md`,
 `lifecycle.md` and `AI_NOTE.md` to `labs/<your-name>/week02/` of your
 group's repository by the start of the next lab. Groups of four must be
-registered with the instructor by the end of this lab (names, one email
-per member, subject **Mobile App Project**).
+registered by the end of week 2: a `project.yaml` in the group's
+repository and its link in the registration form (see "Registration and
+submission" in `project/README.md`).
