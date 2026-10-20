@@ -1,0 +1,47 @@
+# Open with the VS Code "REST Client" extension (or paste into Bruno /
+# Postman). Import openapi.yaml into Bruno or Postman for a full
+# collection.
+@base = http://localhost:8080
+
+### Health
+GET {{base}}/health
+
+### List events (paged)
+GET {{base}}/events?page=1&limit=20
+
+### One event
+GET {{base}}/events/e1
+
+### Create
+POST {{base}}/events
+Content-Type: application/json
+
+{
+  "title": "Robotics club demo",
+  "start": "2026-11-05T15:00:00.000",
+  "venue": "technology",
+  "description": "Line-following robots.",
+  "isFree": true
+}
+
+### Update
+PUT {{base}}/events/e1
+Content-Type: application/json
+
+{
+  "title": "Flutter study group (moved)",
+  "start": "2026-10-15T16:00:00.000",
+  "venue": "online"
+}
+
+### Delete
+DELETE {{base}}/events/e6
+
+### Simulated failure
+GET {{base}}/fail
+
+### Slow response (3 seconds)
+GET {{base}}/slow
+
+### Slower than the app's receive timeout (10 seconds)
+GET {{base}}/slow?seconds=15

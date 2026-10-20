@@ -1,0 +1,26 @@
+# Shared analysis options for every Dart/Flutter project in this course.
+# Each project's analysis_options.yaml contains: include: ../../../../analysis_options.yaml
+# (or a copy of this file). Keep the two in sync.
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  language:
+    strict-casts: true
+    strict-inference: true
+    strict-raw-types: true
+  errors:
+    todo: ignore          # labs use TODO(lab) markers on purpose
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+
+linter:
+  rules:
+    prefer_const_constructors: true
+    prefer_const_declarations: true
+    prefer_final_locals: true
+    avoid_print: true
+    always_declare_return_types: true
+    unawaited_futures: true
+    use_super_parameters: true
+    require_trailing_commas: true

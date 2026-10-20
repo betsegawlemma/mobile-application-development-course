@@ -1,0 +1,137 @@
+openapi: 3.0.3
+info:
+  title: Campus Companion events API
+  version: 1.0.0
+  description: Teaching backend for the Mobile Applications Development course (week 9).
+servers:
+  - url: http://localhost:8080
+  - url: http://10.0.2.2:8080
+    description: From an Android emulator
+paths:
+  /health:
+    get:
+      summary: Liveness check
+      responses:
+        "200": { description: OK }
+  /events:
+    get:
+      summary: List events, soonest first
+      parameters:
+        - { name: page, in: query, schema: { type: integer, minimum: 1, default: 1 } }
+        - { name: limit, in: query, schema: { type: integer, minimum: 1, maximum: 100, default: 20 } }
+      responses:
+        "200":
+          description: A page of events
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/EventPage" }
+        "400": { $ref: "#/components/responses/Error" }
+    post:
+      summary: Create an event
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/EventInput" }
+      responses:
+        "201":
+          description: Created
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Event" }
+        "400": { $ref: "#/components/responses/Error" }
+        "422": { $ref: "#/components/responses/Error" }
+  /events/{id}:
+    parameters:
+      - { name: id, in: path, required: true, schema: { type: string } }
+    get:
+      summary: One event
+      responses:
+        "200":
+          description: The event
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Event" }
+        "404": { $ref: "#/components/responses/Error" }
+    put:
+      summary: Replace an event
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: "#/components/schemas/EventInput" }
+      responses:
+        "200":
+          description: Updated
+          content:
+            application/json:
+              schema: { $ref: "#/components/schemas/Event" }
+        "404": { $ref: "#/components/responses/Error" }
+        "422": { $ref: "#/components/responses/Error" }
+    delete:
+      summary: Delete an event
+      responses:
+        "204": { description: Deleted }
+        "404": { $ref: "#/components/responses/Error" }
+  /fail:
+    get:
+      summary: Always returns 500 (for testing error handling)
+      responses:
+        "500": { $ref: "#/components/responses/Error" }
+  /slow:
+    get:
+      summary: Responds after a delay (for testing loading states and timeouts)
+      parameters:
+        - name: seconds
+          in: query
+          description: How long to wait before answering.
+          schema: { type: integer, minimum: 0, maximum: 60, default: 3 }
+      responses:
+        "200":
+          description: OK, after the delay
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status: { type: string, example: finally }
+                  seconds: { type: integer, example: 3 }
+        "400": { $ref: "#/components/responses/Error" }
+components:
+  schemas:
+    EventInput:
+      type: object
+      required: [title, start, venue]
+      properties:
+        title: { type: string }
+        start: { type: string, format: date-time }
+        venue: { type: string, enum: [mainCampus, scienceFaculty, technology, online] }
+        description: { type: string, default: "" }
+        isFree: { type: boolean, default: true }
+    Event:
+      allOf:
+        - $ref: "#/components/schemas/EventInput"
+        - type: object
+          required: [id]
+          properties:
+            id: { type: string }
+    EventPage:
+      type: object
+      properties:
+        items:
+          type: array
+          items: { $ref: "#/components/schemas/Event" }
+        page: { type: integer }
+        limit: { type: integer }
+        total: { type: integer }
+    Error:
+      type: object
+      properties:
+        error: { type: string }
+        status: { type: integer }
+  responses:
+    Error:
+      description: Error
+      content:
+        application/json:
+          schema: { $ref: "#/components/schemas/Error" }

@@ -1,0 +1,102 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  starters:
+    name: Starters leave the lab work to the student; no links to instructor/
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: tool/check_starters.sh
+      - run: python3 tool/check_private.py
+
+  discover:
+    name: Discover projects
+    runs-on: ubuntu-latest
+    outputs:
+      flutter: ${{ steps.find.outputs.flutter }}
+      dart: ${{ steps.find.outputs.dart }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: find
+        shell: bash
+        run: |
+          # Every Flutter project: weeks/*/lab/{starter,solution} and capstone.
+          # `find .` never fails on a missing path, so an empty repo yields [].
+          flutter=$(find . \( -path './weeks/*/lab/*/pubspec.yaml' -o -path './capstone/pubspec.yaml' \) \
+                      -not -path '*/node_modules/*' -not -path '*/build/*' \
+            | sed 's|^\./||' | xargs -r -n1 dirname | sort | jq -R . | jq -sc .)
+          # Pure-Dart projects (backend). Empty list is fine.
+          dart=$(find . -path './backend/pubspec.yaml' \
+            | sed 's|^\./||' | xargs -r -n1 dirname | sort | jq -R . | jq -sc .)
+          echo "flutter=${flutter:-[]}" >> "$GITHUB_OUTPUT"
+          echo "dart=${dart:-[]}" >> "$GITHUB_OUTPUT"
+          echo "Flutter projects: $flutter"
+          echo "Dart projects: $dart"
+
+  flutter:
+    name: Flutter ${{ matrix.project }}
+    needs: discover
+    if: needs.discover.outputs.flutter != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project: ${{ fromJson(needs.discover.outputs.flutter) }}
+    defaults:
+      run:
+        working-directory: ${{ matrix.project }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read pinned Flutter version
+        id: fvm
+        working-directory: .
+        run: echo "version=$(cat .fvmrc)" >> "$GITHUB_OUTPUT"
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ steps.fvm.outputs.version }}
+          channel: stable
+          cache: true
+      - run: flutter --version
+      - run: flutter pub get
+      - run: flutter analyze --fatal-infos
+      # Starter projects contain tests that fail until the lab is completed.
+      # Golden images are generated on Linux; the runner is Linux too, so
+      # they are included here.
+      - if: ${{ !endsWith(matrix.project, '/starter') }}
+        run: flutter test
+
+  dart:
+    name: Dart ${{ matrix.project }}
+    needs: discover
+    if: needs.discover.outputs.dart != '[]'
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        project: ${{ fromJson(needs.discover.outputs.dart) }}
+    defaults:
+      run:
+        working-directory: ${{ matrix.project }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read pinned Flutter version
+        id: fvm
+        working-directory: .
+        run: echo "version=$(cat .fvmrc)" >> "$GITHUB_OUTPUT"
+      - uses: subosito/flutter-action@v2
+        with:
+          flutter-version: ${{ steps.fvm.outputs.version }}
+          channel: stable
+          cache: true
+      - run: dart pub get
+      - run: dart analyze --fatal-infos
+      - run: dart test

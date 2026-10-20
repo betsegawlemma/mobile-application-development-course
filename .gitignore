@@ -1,0 +1,43 @@
+# Flutter / Dart
+**/.dart_tool/
+**/.packages
+**/build/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/pubspec.lock
+!capstone/pubspec.lock
+!backend/pubspec.lock
+**/coverage/
+**/*.iml
+**/.metadata
+
+# Android / iOS
+**/android/.gradle/
+**/android/local.properties
+**/android/key.properties
+**/android/**/*.jks
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/ephemeral/
+
+# Firebase
+**/google-services.json
+**/GoogleService-Info.plist
+**/firebase-debug.log
+**/firestore-debug.log
+**/.firebase/
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Site build output
+site/dist/
+node_modules/
+review/
+
+# Golden test failure output (written by flutter test)
+**/goldens/failures/
+**/test/exercises/failures/

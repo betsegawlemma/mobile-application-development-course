@@ -1,0 +1,42 @@
+# Files that a core lab task names but only READS, so they are rightly the
+# same in starter and solution. One "<week folder> <path in the project>"
+# per line. Used by tool/check_starters.py.
+week01-intro-dart lib/exercises/lecture_examples.dart                     # worked examples, read only
+week01-intro-dart lib/exercises/lecture_widget_example.dart               # worked example, read only
+week02-dart-widgets lib/exercises/lecture_examples.dart                   # worked examples, read only
+week02-dart-widgets lib/exercises/lecture_widgets.dart                    # worked examples, read only
+week02-dart-widgets lib/app.dart                                        # Task 2: read to decide stateless or stateful, not changed
+week03-layout lib/exercises/lecture_layouts.dart                         # worked examples, read only
+week04-navigation lib/exercises/named_routes_demo.dart                   # read-and-predict demo, read only
+week04-navigation lib/exercises/lecture_navigation.dart                  # worked examples, read only
+week05-state-architecture lib/features/notes/domain/note.dart           # given as freezed; read in Task 0
+week05-state-architecture lib/app.dart                                   # read in Task 0 (inherited widgets)
+week05-state-architecture lib/main.dart                                  # read in Task 0 (ProviderScope)
+week05-state-architecture lib/exercises/lecture_reminders.dart           # worked examples, read only
+week05-state-architecture lib/exercises/lecture_check_in.dart            # worked example, read only
+week05-state-architecture lib/exercises/lecture_check_in_by_hand.dart    # worked example, read only
+week05-state-architecture lib/features/profile/data/profile_notifier.dart  # provided; the screen is the task
+week06-testing-1 lib/features/notes/domain/note.dart                     # the code under test
+week06-testing-1 lib/exercises/seats_label.dart                          # Task 3: code the assistant's tests check, read only
+week06-testing-1 lib/exercises/lecture_testing.dart                      # worked examples, read only
+week06-testing-1 lib/exercises/lecture_archive.dart                      # live-coding result, read only
+week07-interactivity lib/features/notes/presentation/notes_screen.dart   # observe-only experiment
+week07-interactivity lib/exercises/lecture_interactions.dart             # worked examples, read only
+week08-persistence assets/data/about.json                                # data the task loads
+week08-persistence lib/exercises/lecture_persistence.dart              # worked examples, read only
+week08-persistence lib/exercises/lecture_reading_tip.dart              # worked example, read only
+week08-persistence lib/features/notes/data/db/notes_database.dart     # Task 3d reads the migration
+week08-persistence lib/app.dart                                       # Task 2a reads toThemeMode
+week09-networking lib/core/network/api_config.dart                     # Task 4b reads the timeouts
+week09-networking lib/exercises/lecture_networking.dart                # worked examples, read only
+week10-firebase lib/exercises/stream_examples.dart                    # streams revision, read only
+week10-firebase lib/exercises/lecture_firebase.dart                   # worked example, read only
+week10-firebase lib/features/lost_found/presentation/new_lost_item_screen.dart  # Task 3c reads _save
+week11-device-features lib/core/router/router.dart                   # Task 2c reads the shell route
+week11-device-features pubspec.yaml                                   # Task 6: sensors_plus is already declared
+week14-release lib/l10n/app_en.arb                                       # the English source
+week14-release lib/l10n/app_am.arb                                       # JSON cannot hold a TODO comment
+week14-release lib/exercises/lecture_release.dart                       # worked examples, read only
+week12-testing-2-ci lib/features/notes/data/db/notes_database.dart    # Task 1b plants a fault, then undoes it
+week12-testing-2-ci lib/core/theme/app_theme.dart                     # Task 3b changes a colour, then undoes it
+week12-testing-2-ci lib/features/playground/presentation/performance_screen.dart  # Task 6a reads and measures it
