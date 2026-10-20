@@ -5,7 +5,7 @@
 | **Programme** | B.Sc. in Computer Science, Addis Ababa University |
 | **Course code** | TBD |
 | **Instructor** | Betsegaw Lemma — betsegawlemma@gmail.com |
-| **Term** | TBD (14 teaching weeks) |
+| **Term** | From the week of 21 September 2026; 14 teaching weeks, presentations in the week of 18 January 2027 (dates in `schedule.md`) |
 | **Contact hours** | 2 h lecture + 3 h lab per week |
 | **Prerequisites** | Introductory programming, data structures |
 | **Materials** | https://betsegawlemma.github.io/mobile-application-development-course/ |
