@@ -253,7 +253,7 @@ you cannot yet.
 - Flutter documentation (the source of truth for APIs): https://docs.flutter.dev
 - pub.dev changelogs, for when a model's answer is version-confused
 - OWASP top ten for large language model applications:
-  https://owasp.org/www-project-top-10-for-large-language-model-applications/
+  https://owasp.org/projects/top-10-for-large-language-model-applications
 - Your own AI notes from earlier labs and your group's `AI_USAGE.md` —
   read them again at the end of the term and see what you would do
   differently.

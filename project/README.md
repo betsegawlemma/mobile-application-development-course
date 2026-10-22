@@ -10,8 +10,8 @@ each week's topic as it is taught.
 |---|---|---|
 | Group registration | End of week 2 | — |
 | [Proposal](proposal-template.md) | End of week 3 | 10 % |
-| [Milestone 1](milestones.md#milestone-1) — screens, navigation, state | End of week 6 | 15 % |
-| [Milestone 2](milestones.md#milestone-2) — data, backend, tests | End of week 10 | 15 % |
+| [Milestone 1](milestones.md#milestone-1--screens-navigation-state) — screens, navigation, state | End of week 6 | 15 % |
+| [Milestone 2](milestones.md#milestone-2--data-backend-tests) — data, backend, tests | End of week 10 | 15 % |
 | Final submission | End of week 14 | 45 % |
 | [Presentation](presentation-guidelines.md) | Week 15 | 15 % |
 

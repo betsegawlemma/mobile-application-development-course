@@ -114,7 +114,7 @@ There is no required textbook. The official reference list:
 - Flutter Architectures
 - Flutter Engineering
 
-Primary online references: https://docs.flutter.dev, https://dart.dev/guides,
+Primary online references: https://docs.flutter.dev, https://dart.dev/docs,
 https://riverpod.dev, https://firebase.google.com/docs/flutter. An annotated
 list is in `../guides/resources.md`.
 

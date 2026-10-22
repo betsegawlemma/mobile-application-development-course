@@ -53,10 +53,10 @@ good connection; you do not need them in this lab.
 **AI-use level:** 1 — Explain only. You may ask an assistant what an
 installation error means.
 
-1. Follow https://docs.flutter.dev/get-started/install for your OS. Choose
+1. Follow https://docs.flutter.dev/install for your OS. Choose
    the **stable** channel. If the installer offers a newer version than
    3.47.7, download the archive for 3.47.7 from
-   https://docs.flutter.dev/release/archive instead — the course pins that
+   https://docs.flutter.dev/install/archive instead — the course pins that
    version so everyone's code behaves the same.
 2. Add `flutter/bin` to your `PATH`. Open a **new** terminal and run:
    ```bash

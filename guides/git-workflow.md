@@ -156,5 +156,5 @@ thing that is: work that was never committed.
 ## Further reading
 
 - Conventional commits: https://www.conventionalcommits.org
-- GitHub flow: https://docs.github.com/get-started/quickstart/github-flow
+- GitHub flow: https://docs.github.com/en/get-started/using-github/github-flow
 - `git help <command>` — better than most tutorials

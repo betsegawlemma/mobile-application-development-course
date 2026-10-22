@@ -57,7 +57,7 @@ Cross-cutting references used throughout the course:
 ## Student quick start
 
 1. Install Flutter **3.47.7** — follow week 1's lab, or
-   https://docs.flutter.dev/get-started/install. Confirm with
+   https://docs.flutter.dev/install. Confirm with
    `flutter --version`. If you use [fvm](https://fvm.app), the repo pins the
    version in `.fvmrc`; `fvm install` picks it up.
 2. Clone this repository and run the week 1 starter:

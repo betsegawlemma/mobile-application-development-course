@@ -92,9 +92,9 @@ JSON: https://docs.flutter.dev/data-and-backend/serialization/json
 **Networking, and `FutureBuilder` or a provider** (week 9) —
 https://docs.flutter.dev/cookbook/networking ·
 dio: https://pub.dev/packages/dio ·
-HTTP status codes: https://developer.mozilla.org/docs/Web/HTTP/Status
+HTTP status codes: https://developer.mozilla.org/en-US/docs/Web/HTTP/Reference/Status
 
-**Firebase and streams** (week 10) — https://firebase.flutter.dev · rules:
+**Firebase and streams** (week 10) — https://firebase.google.com/docs/flutter · rules:
 https://firebase.google.com/docs/rules · testing rules:
 https://firebase.google.com/docs/rules/unit-tests · emulators:
 https://firebase.google.com/docs/emulator-suite · plans:
@@ -107,15 +107,15 @@ https://pub.dev/packages/geolocator ·
 https://pub.dev/packages/image_picker
 
 **Performance and CI** (week 12) — https://docs.flutter.dev/perf/best-practices ·
-DevTools: https://docs.flutter.dev/tools/devtools/overview
+DevTools: https://docs.flutter.dev/tools/devtools
 
 **Responsible AI** (week 13) — `ai-assisted-development.md` in this folder ·
-https://owasp.org/www-project-top-10-for-large-language-model-applications/ ·
+https://owasp.org/projects/top-10-for-large-language-model-applications ·
 https://pair.withgoogle.com/guidebook/
 
 **Accessibility and localisation** (week 14) —
-https://docs.flutter.dev/ui/accessibility-and-internationalization/accessibility ·
-https://docs.flutter.dev/ui/accessibility-and-internationalization/internationalization
+https://docs.flutter.dev/ui/accessibility ·
+https://docs.flutter.dev/ui/internationalization
 
 **Release** (week 14) — https://docs.flutter.dev/deployment/android ·
 https://docs.flutter.dev/deployment/ios ·
@@ -124,7 +124,7 @@ https://docs.flutter.dev/deployment/flavors
 ## Free courses and videos
 
 - *Flutter codelabs* — short, official, hands-on:
-  https://docs.flutter.dev/codelabs
+  https://docs.flutter.dev/reference/learning-resources
 - *Flutter* on YouTube — *Widget of the Week* and *Decoding Flutter*:
   https://www.youtube.com/@flutterdev
 - *Dart and Flutter: The Complete Developer's Guide* and similar paid
