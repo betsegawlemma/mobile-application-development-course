@@ -16,7 +16,7 @@ them.
 - **ARB file** — A JSON file with the app's messages in one language, plus a description of each. (week 14)
 - **arrange, act, assert** — The three steps of a test: set up, do one thing, check the result. (week 6)
 - **artifact** — A file that a workflow run keeps for you to download, such as a coverage report or new golden images. (week 12)
-- **asset** — A file (image, font, data) bundled into the app and declared in `pubspec.yaml`. (week 3)
+- **asset** — A file (image, font, data) bundled into the app and declared in `pubspec.yaml`. ([week 3](../weeks/week03-layout/README.md#key-terms))
 - **`async` / `await`** — Mark a function that returns a `Future` / wait for a `Future` inside it without blocking the thread. ([week 2](../weeks/week02-dart-widgets/README.md#key-terms))
 - **`AsyncValue`** — The value of an asynchronous provider: loading, data or error. (week 5)
 
@@ -25,7 +25,7 @@ them.
 - **backend-as-a-service (BaaS)** — A service that gives an app accounts, a database and file storage without a server of your own. (week 10)
 - **boundary** — The value where a rule changes, such as `max` in "from 1 to `max`"; test the boundary and the value just past it. (week 6)
 - **branch** — One section of a `StatefulShellRoute`, with its own navigator and back stack (not a Git branch). (week 4)
-- **breakpoint** — The width at which a layout changes, for example from a list to a grid at 600 pixels. (week 3)
+- **breakpoint** — The width at which a layout changes, for example from a list to a grid at 600 pixels. ([week 3](../weeks/week03-layout/README.md#key-terms))
 
 ## C
 
@@ -36,7 +36,7 @@ them.
 - **collection** — A group of documents, such as `lost_found`. (week 10)
 - **companion** — The class drift generates for inserts and updates, in which every field is optional. (week 8)
 - **consent** — The user's agreement, asked before their text is sent off the device. (week 13)
-- **constraints** — The minimum and maximum width and height that a parent gives its child. (week 3)
+- **constraints** — The minimum and maximum width and height that a parent gives its child. ([week 3](../weeks/week03-layout/README.md#key-terms))
 - **continuous integration (CI)** — A server that runs the team's checks on a clean machine for every push. (week 12)
 - **cool-down** — A time after an event during which new readings are ignored, so that one shake gives one event. (week 11)
 - **`copyWith`** — A method that returns a copy of an object with some fields changed. ([week 2](../weeks/week02-dart-widgets/README.md#key-terms))
@@ -63,7 +63,7 @@ them.
 ## E
 
 - **element** — The long-lived object that holds a widget's place in the tree and, for a `StatefulWidget`, its `State`. ([week 2](../weeks/week02-dart-widgets/README.md#key-terms))
-- **ellipsis** — The "…" that replaces the end of a text that does not fit. (week 3)
+- **ellipsis** — The "…" that replaces the end of a text that does not fit. ([week 3](../weeks/week03-layout/README.md#key-terms))
 - **Emulator Suite** — Programs that run Firebase Authentication, Firestore and Storage on your computer, with no project and no internet. (week 10)
 - **endpoint** — One path and method of an API, such as `GET /events/{id}`. (week 9)
 - **enhanced enum** — An enum whose values have fields and a constructor. ([week 2](../weeks/week02-dart-widgets/README.md#key-terms))
@@ -82,7 +82,7 @@ them.
 - **`final` / `const`** — Set once at run time / fixed when the program is compiled. ([week 1](../weeks/week01-intro-dart/README.md#key-terms))
 - **Firebase Storage** — The Firebase service that stores files such as photos. (week 11)
 - **flavour** — One variant of the app built from the same code, with its own application id, name and settings (development, staging, production). (week 14)
-- **flex** — The share of the remaining space that an `Expanded` or `Flexible` child gets. (week 3)
+- **flex** — The share of the remaining space that an `Expanded` or `Flexible` child gets. ([week 3](../weeks/week03-layout/README.md#key-terms))
 - **focus node** — An object that holds and moves the keyboard focus between fields. (week 7)
 - **frame** — One picture on the screen; at 60 frames per second each must be ready within about 16 ms. (week 12)
 - **`Future`** — A value that will be ready later. ([week 2](../weeks/week02-dart-widgets/README.md#key-terms))
@@ -142,13 +142,13 @@ them.
 - **locale** — The language and region that decide how dates and numbers are written. (week 8)
 - **locale fallback** — The language the app uses when the device's language is not supported. (week 14)
 - **location service** — The device-wide setting that switches location on or off, separate from the app's permission. (week 11)
-- **loose constraint** — The minimum is 0, so the child may be smaller than the maximum. (week 3)
+- **loose constraint** — The minimum is 0, so the child may be smaller than the maximum. ([week 3](../weeks/week03-layout/README.md#key-terms))
 
 ## M
 
 - **magnetometer** — The sensor that measures the magnetic field on three axes; a compass is computed from it. (week 11)
 - **magnitude** — The length of a reading as a vector, √(x² + y² + z²). (week 11)
-- **main axis / cross axis** — For a `Row`, horizontal / vertical; for a `Column`, vertical / horizontal. (week 3)
+- **main axis / cross axis** — For a `Row`, horizontal / vertical; for a `Column`, vertical / horizontal. ([week 3](../weeks/week03-layout/README.md#key-terms))
 - **matcher** — The second argument of `expect`, which says what the value must be, such as `isNull` or `contains('x')`. (week 6)
 - **migration** — The code that changes an existing database from an old schema to the new one without losing its data. (week 8)
 - **mixin** — A group of methods and fields that a class adds with `with`. ([week 2](../weeks/week02-dart-widgets/README.md#key-terms))
@@ -169,7 +169,7 @@ them.
 - **offline** — The phone cannot reach the Firestore server; reads and writes use the copy on the phone until the connection returns. (week 10)
 - **on-device inference** — Running a model on the phone, so the text never leaves it. (week 13)
 - **OpenAPI** — A file format that describes an API's endpoints, parameters, bodies and status codes; the contract between client and server. (week 9)
-- **overflow** — A child is larger than the space its parent has; Flutter draws yellow and black stripes and reports an error. (week 3)
+- **overflow** — A child is larger than the space its parent has; Flutter draws yellow and black stripes and reports an error. ([week 3](../weeks/week03-layout/README.md#key-terms))
 - **override** — A replacement for a provider in one `ProviderScope` or `ProviderContainer`, used in tests. (week 5, week 6)
 
 ## P
@@ -208,7 +208,7 @@ them.
 - **`request.auth`** — Who sends the request; `null` when signed out. (week 10)
 - **`request.resource.data`** — The document as it will be after the write. (week 10)
 - **`resource.data`** — The document as it is stored now. (week 10)
-- **responsive layout** — A layout that changes with the space it has. (week 3)
+- **responsive layout** — A layout that changes with the space it has. ([week 3](../weeks/week03-layout/README.md#key-terms))
 - **restart (in a test)** — Building the app again with a new `ProviderScope`, so that every provider is created again and reads from storage. (week 12)
 - **result** — The value a page returns with `pop(value)` to the code that pushed it and is waiting with `await`. (week 4)
 - **ripple (ink splash)** — The spreading highlight that `InkWell` and `InkResponse` paint on a `Material` when touched. (week 7)
@@ -253,9 +253,9 @@ them.
 - **test level** — How much of the app a test runs: unit, widget, integration or golden. (week 12)
 - **test-driven development (TDD)** — Writing a failing test first, then the code that makes it pass, then improving the code. (week 6)
 - **text scale** — The user's font-size setting, which multiplies every text size in the app. (week 14)
-- **`TextTheme` / `ColorScheme`** — The named text styles and colours of the app's theme, read with `Theme.of(context)`. (week 3)
+- **`TextTheme` / `ColorScheme`** — The named text styles and colours of the app's theme, read with `Theme.of(context)`. ([week 3](../weeks/week03-layout/README.md#key-terms))
 - **threshold** — The value a reading must reach before it counts. (week 11)
-- **tight constraint** — Minimum and maximum are the same, so the child has exactly that size. (week 3)
+- **tight constraint** — Minimum and maximum are the same, so the child has exactly that size. ([week 3](../weeks/week03-layout/README.md#key-terms))
 - **timeout** — The longest time the client waits before it gives up on a request: to connect, or to receive the answer. (week 9)
 - **`Timestamp`** — Firestore's type for a point in time; the repository converts it to and from `DateTime`. (week 10)
 - **token** — A piece of a word; models read and write tokens, and cloud providers charge per token. (week 13)
@@ -264,7 +264,7 @@ them.
 
 ## U
 
-- **unbounded** — The maximum is infinity; the child can be as large as it wants in that direction. (week 3)
+- **unbounded** — The maximum is infinity; the child can be as large as it wants in that direction. ([week 3](../weeks/week03-layout/README.md#key-terms))
 - **unit test** — A test of one function or class in plain Dart, with no widgets and no device. ([week 1](../weeks/week01-intro-dart/README.md#key-terms), week 6)
 - **upsert** — Insert a row, or replace it when a row with the same primary key exists. (week 8)
 - **usage description** — The sentence in `Info.plist` that iOS shows in the permission dialog; without it the app crashes. (week 11)

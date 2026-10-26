@@ -20,19 +20,15 @@ members:
     student_id: "UGR/0000/00"         # exactly as on your student ID card
     email: "abebe.kebede@example.com" # an address you read every day
     github: "abebe-kebede"            # your GitHub username, without @
-    lab_folder: "labs/abebe-kebede"   # where your individual labs are
   - name: ""
     student_id: ""
     email: ""
     github: ""
-    lab_folder: ""
   - name: ""
     student_id: ""
     email: ""
     github: ""
-    lab_folder: ""
   - name: ""
     student_id: ""
     email: ""
     github: ""
-    lab_folder: ""

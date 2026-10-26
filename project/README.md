@@ -28,7 +28,7 @@ repository is private.
   1. copy [project-template.yaml](project-template.yaml) to the root of
      your repository as `project.yaml`, and fill in the title, the
      one-sentence summary and the four members (name, student ID, email,
-     GitHub username, lab folder);
+     GitHub username);
   2. push it to the `main` branch;
   3. one member submits the repository link in the registration form
      given in the course announcement.
