@@ -431,14 +431,6 @@ final o = MediaQuery.orientationOf(context);
 
 ---
 
-<!-- _class: live -->
-
-## Live coding: resize the feed
-
-The script is in the speaker notes.
-
----
-
 ## Testing layout
 
 ```dart

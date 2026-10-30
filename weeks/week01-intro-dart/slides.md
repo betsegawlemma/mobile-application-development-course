@@ -402,14 +402,6 @@ print(evens.toList());
 
 ---
 
-<!-- _class: live -->
-
-## Live coding: from Hello World to a timetable app
-
-The script is in the speaker notes.
-
----
-
 ## Project anatomy
 
 ```

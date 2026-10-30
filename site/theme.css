@@ -39,12 +39,6 @@ section.pause::before {
   display: block; font-size: 0.6em; text-transform: uppercase;
   letter-spacing: 0.08em; color: var(--c-accent); margin-bottom: 0.6em;
 }
-section.live { border-left: 14px solid var(--c-warn); }
-section.live::before {
-  content: 'Live coding'; display: block; font-size: 0.6em;
-  text-transform: uppercase; letter-spacing: 0.08em; color: var(--c-warn);
-  margin-bottom: 0.6em;
-}
 
 pre, code { font-family: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', ui-monospace, monospace; }
 pre { background: var(--c-code-bg); border: 1px solid #d0d7de; border-radius: 8px; padding: 0.6em 0.8em; font-size: 0.78em; line-height: 1.4; }

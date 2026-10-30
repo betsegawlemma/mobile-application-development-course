@@ -518,14 +518,6 @@ Test for rule 2: delete `_timer?.cancel()` in `TickCounter` and run its test.
 
 ---
 
-<!-- _class: live -->
-
-## Live coding: a vote counter, from stateless to stateful
-
-The script is in the speaker notes.
-
----
-
 ## Testing a stateful widget
 
 ```dart
