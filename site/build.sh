@@ -7,7 +7,17 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+# Notes, Lab and Quiz links go to the repository that is being built, so a
+# local build of the private repository links to its own copy of every week
+# (unreleased weeks are not in the public repository yet). In GitHub Actions
+# GITHUB_REPOSITORY names the repository; otherwise the origin remote does.
 REPO_URL="https://github.com/betsegawlemma/mobile-application-development-course"
+if [[ -n "${GITHUB_REPOSITORY:-}" ]]; then
+  REPO_URL="https://github.com/$GITHUB_REPOSITORY"
+elif origin="$(git remote get-url origin 2>/dev/null)" \
+     && [[ "$origin" =~ github\.com[:/]([^/]+/[^/]+)$ ]]; then
+  REPO_URL="https://github.com/${BASH_REMATCH[1]%.git}"
+fi
 FLUTTER_VERSION="$(cat .fvmrc)"
 DIST=site/dist
 rm -rf "$DIST"; mkdir -p "$DIST"
