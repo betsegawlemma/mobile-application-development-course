@@ -1,6 +1,6 @@
 # Project proposal
 
-**Due:** end of week 3 · **Submit:** commit it as `PROPOSAL.md` in the root
+**Due:** Sunday 8 November 2026 · **Submit:** commit it as `PROPOSAL.md` in the root
 of your group's repository and tag that commit `proposal`
 
 Replace every *italic* instruction with your own text. Keep the whole
@@ -127,5 +127,5 @@ short written comment:
 - **Approved.**
 - **Approved with changes** — the changes are listed; make them before
   Milestone 1.
-- **Revise and resubmit by the end of week 4** — the group may not start
+- **Revise and resubmit by the date given in the comment** — the group may not start
   Milestone 1 work on the parts that must be revised.

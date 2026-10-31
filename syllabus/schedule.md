@@ -8,8 +8,8 @@ date is the Monday of that teaching week.
 |---|---|---|---|---|
 | 1 | 21 Sep 2026 | Mobile landscape, Flutter, Dart I | Setup, Hello World, Dart exercises | — |
 | 2 | 28 Sep 2026 | Dart II, widget lifecycle | Capstone skeleton, async | **Group registration** (Mon 26 Oct 2026) |
-| 3 | 26 Oct 2026 | Layout and common widgets | Static Events and Profile screens | **Project proposal** (Fri 30 Oct 2026) |
-| 4 | 2 Nov 2026 | Navigation | Wire all screens | — |
+| 3 | 26 Oct 2026 | Layout and common widgets | Static Events and Profile screens | — |
+| 4 | 2 Nov 2026 | Navigation | Wire all screens | **Project proposal** (Sun 8 Nov 2026) |
 | 5 | 9 Nov 2026 | State management & architecture | Riverpod refactor | — |
 | 6 | 16 Nov 2026 | Testing I | Tests for notes feature | **Milestone 1** (Fri 20 Nov 2026) |
 | 7 | 23 Nov 2026 | Interactivity | Gestures, forms | — |

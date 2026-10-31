@@ -9,7 +9,7 @@ each week's topic as it is taught.
 | Deliverable | Due | Weight within the project |
 |---|---|---|
 | Group registration | End of week 2 | — |
-| [Proposal](proposal-template.md) | End of week 3 | 10 % |
+| [Proposal](proposal-template.md) | Sunday 8 November 2026 (week 4) | 10 % |
 | [Milestone 1](milestones.md#milestone-1--screens-navigation-state) — screens, navigation, state | End of week 6 | 15 % |
 | [Milestone 2](milestones.md#milestone-2--data-backend-tests) — data, backend, tests | End of week 10 | 15 % |
 | Final submission | End of week 14 | 45 % |
@@ -36,7 +36,7 @@ repository is private.
   The course reads `project.yaml` with a program: keep every key as it
   is spelled in the template, and keep the file up to date when the
   title or a member changes.
-- **Proposal** by the end of week 3: the completed
+- **Proposal** by Sunday 8 November 2026: the completed
   `proposal-template.md`, committed as `PROPOSAL.md` in the root of your
   repository, with the tag `proposal` on that commit.
 - **Milestones and final submission**: in the same repository. Each milestone is a
